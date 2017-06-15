@@ -15,10 +15,3 @@ RUN apt-get -y install curl
 RUN apt-get -y install npm
 RUN apt-get -y install nodejs
 RUN npm -y install mocha
-
-# Copy FS files into the container
-RUN mkdir /tmp/program
-COPY calc.js /tmp/program
-COPY package.json /tmp/program
-COPY README.md /tmp/program
-COPY test.js /tmp/program
