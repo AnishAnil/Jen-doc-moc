@@ -1,0 +1,16 @@
+{
+  "name": "mynodetesting1",
+  "version": "1.0.0",
+  "description": "This is a test",
+  "main": "calc.js",
+  "dependencies": {
+    "calc": "^0.0.2",
+    "calc.js": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "anish",
+  "license": "ISC"
+}
