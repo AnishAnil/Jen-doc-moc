@@ -14,7 +14,8 @@ RUN apt-get -y install python-software-properties
 RUN apt-get -y install curl
 RUN apt-get -y install npm
 RUN apt-get -y install nodejs
-RUN npm -y install mocha
+RUN ln -s /usr/bin/nodejs /usr/bin/node
+RUN npm -y install mocha -g
 
 # Copy FS files into the container
 RUN mkdir /tmp/program
@@ -23,6 +24,10 @@ COPY package.json /tmp/program
 COPY README.md /tmp/program
 COPY test.js /tmp/program
 COPY script.sh /tmp/program
+RUN chmod+x /tmp/script.sh
+RUN mocha --version
+RUN nodejs -v
 
 # Run the script
-RUN /tmp/script.sh
+#RUN /tmp/script.sh
+
