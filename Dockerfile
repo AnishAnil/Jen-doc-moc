@@ -22,3 +22,6 @@ COPY calc.js /tmp/program
 COPY package.json /tmp/program
 COPY README.md /tmp/program
 COPY test.js /tmp/program
+
+# Run the script
+RUN /tmp/script.sh
