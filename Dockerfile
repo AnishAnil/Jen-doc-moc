@@ -24,7 +24,7 @@ COPY package.json /tmp/program
 COPY README.md /tmp/program
 COPY test.js /tmp/program
 COPY script.sh /tmp/program
-RUN chmod+x /tmp/script.sh
+RUN chmod +x /tmp/script.sh
 RUN mocha --version
 RUN nodejs -v
 
