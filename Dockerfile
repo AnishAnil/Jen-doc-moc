@@ -9,6 +9,7 @@ RUN apt-get update
 RUN apt-get -y install bzip2
 RUN apt-get -y install software-properties-common
 RUN apt-get -y install python-software-properties
+RUN apt-get -y install vim
 
 # Install the Mocha and Nodejs
 RUN apt-get -y install curl
@@ -24,7 +25,7 @@ COPY package.json /tmp/program
 COPY README.md /tmp/program
 COPY test.js /tmp/program
 COPY script.sh /tmp/program
-RUN chmod +x /tmp/script.sh
+RUN chmod +x /tmp/program/script.sh
 RUN mocha --version
 RUN nodejs -v
 
