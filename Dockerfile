@@ -30,5 +30,5 @@ RUN mocha --version
 RUN nodejs -v
 
 # Run the script
-RUN /tmp/program/script.sh
-
+#RUN /tmp/program/script.sh
+RUN mocha /tmp/program/calc.js
