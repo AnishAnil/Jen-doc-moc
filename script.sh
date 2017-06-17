@@ -1,4 +1,4 @@
-#bin/sh
+#!/bin/bash
 
-mocha /tmp/program/calc.js
-npm /tmp/program/test
+mocha calc.js
+npm test
