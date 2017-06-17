@@ -32,4 +32,4 @@ RUN nodejs -v
 # Run the script
 #RUN /tmp/program/script.sh
 RUN mocha /tmp/program/calc.js
-RUN npm /tmp/program/test
+RUN mocha /tmp/program/test.js
